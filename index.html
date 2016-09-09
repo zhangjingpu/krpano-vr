@@ -332,7 +332,9 @@
                             'z-index': -1
                         });
                         bgMusic.play();
-                        guide.play();
+                        setTimeout(function(){
+                          guide.play();
+                        },1000);
                     }, 1000);
                 }
             }
@@ -345,7 +347,10 @@
     $('#review').click(function(){
        player.setAttribute('src','video/video0.mp4');
        guide.setAttribute('src','./video/guide0.mp3');
-       guide.play();
+       setTimeout(function(){
+        guide.play();
+      },1000);
+       
        $('.end').css('visibility','hidden');
        bgMusic.setAttribute('src','video/bg_music.mp3');
        bgMusic.play();
