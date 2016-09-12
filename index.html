@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>市面上最美的女程序员</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
@@ -11,17 +12,17 @@
     @-ms-viewport {
         width: device-width;
     }
-
+    
     @media only screen and (min-device-width:800px) {
         html {
             overflow: hidden;
         }
     }
-
+    
     html {
         height: 100%;
     }
-
+    
     body {
         height: 100%;
         overflow: hidden;
@@ -32,7 +33,11 @@
         color: #FFFFFF;
         background-color: #000000;
     }
-
+    
+    a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
     video {
         position: absolute;
         z-index: -2;
@@ -40,7 +45,7 @@
         opacity: 0;
         transition: opacity .4s ease-in, z-index .4s ease-in;
     }
-
+    
     .loader {
         width: 100%;
         height: 100%;
@@ -56,128 +61,139 @@
         -ms-transition: opacity .4s ease-out, z-index .4s ease-out;
         transition: opacity .4s ease-out, z-index .4s ease-out;
     }
-
+    
     .loader img {
         display: block;
         margin: auto;
     }
-
+    
     .loader .solar {
         width: 100%;
     }
-
+    
     .loader .solar-hide {
         display: none;
     }
-
+    
     .loader #tip {
         width: 50%;
     }
-
+    
     .loader #logo {
         margin-top: 50%;
         width: 20%;
     }
-
+    
     #pano {
         position: relative;
         z-index: 9;
     }
-
+    
     .end {
         width: 100%;
         height: 100%;
         background-color: #fff;
         position: absolute;
         z-index: 1;
+        text-align: center;
         visibility: hidden;
     }
-
+    
     .end #banner {
-        width: 98%;
-        margin: auto;
-        display: block;
+        width: 50%;
+        left: 50%;
+        margin-left: -25%;
+        bottom: 10%;
+        position: absolute;
     }
-
+    
     #end-solar {
         display: block;
         width: 30%;
+        margin: 40% auto 0;
+    }
+    
+    .end a#enter {
+        display: block;
+        width: 30%;
         margin: auto;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-
-    .end a {
-        display: inline-block;
-        width: 24%;
-        -webkit-tap-highlight-color:rgba(0,0,0,0);
-    }
-
+    
     .end a img {
         width: 100%;
     }
-
-    .end #join {
-        margin: 0 10% 0 20%;
-    }
-
-    .end #end-logo {
-        width: 20%;
-        display: block;
-        margin: 25% auto 0;
-    }
-
+    
     #thumb {
         width: 0;
         height: 0;
         margin: 0;
         position: absolute;
     }
+    
     .gallery {
         width: 100px;
         height: 100px;
-        margin: 40% auto 0;
+        margin: 40% auto 2%;
     }
+    
     .audio-panel {
         position: fixed;
         z-index: -1;
         visibility: hidden;
     }
+    
     ::-webkit-selection {
-  background:none
-}
-::-moz-selection {
-  background:none
-}
-::selection {
-  background:none
-}
+        background: none
+    }
+    
+    ::-moz-selection {
+        background: none
+    }
+    
+    ::selection {
+        background: none
+    }
+    
+    .top {
+        position: absolute;
+        top: 10px;
+    }
+    
+    #back {
+        left: 10px;
+        width: 50px;
+    }
+    
+    #share {
+        right: 10px;
+        width: 50%;
+    }
     </style>
 </head>
 
 <body>
-    <img src="./images/seo.jpg" id="thumb" alt="logo" >
+    <img src="./images/seo.jpg" id="thumb" alt="logo">
     <div class="loader">
         <div class="gallery">
-          <img src="./images/1.gif" alt="" class="solar" id="status1">
-          <img src="./images/4.gif" alt="" class="solar solar-hide" id="status2">
+            <img src="./images/1.gif" alt="" class="solar" id="status1">
+            <img src="./images/4.gif" alt="" class="solar solar-hide" id="status2">
         </div>
         <p id="progress">0%</p>
         <img src="images/wifi.png" id="tip" alt="">
         <img src="images/logo.png" id="logo" alt="">
     </div>
     <video id="player" src="video/video0.mp4" x-webkit-airplay="true" webkit-playsinline="true" preload="auto"></video>
-    <!-- <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="./video/bg-music.mp3" style="position: fixed;top: 0"> -->
     <div class="audio-panel">
-      <audio id="bg-music" controls="controls" loop="loop" preload="auto" src="./video/bg_music.mp3">
-      <!-- <audio id="end-music" controls="controls" loop="loop" preload="auto" src="./video/end_music.mp3"> -->
-
-      <audio id="guide" controls="controls" preload="auto" src="./video/guide0.mp3">
+        <audio id="bg-music" controls="controls" loop="loop" preload="auto" src="./video/bg_music.mp3">
+            <audio id="guide" controls="controls" preload="auto" src="./video/guide0.mp3">
     </div>
     <div class="end">
-        <img src="images/banner.png" id="banner" alt="">
-        <img src="images/5.gif" id="end-solar" alt="">
-        <a href="job/index.html" id="join"><img src="images/enter.png" alt=""></a>
-        <a href="javascript:;" id="review"><img src="images/rep.png" alt=""></a>
-        <img src="images/logo.png" id="end-logo" alt="">
+        <a href="javascript:;" id="review"><img src="./images/back.png" alt="" class="top" id="back"></a>
+        <img src="./images/share.png" alt="" class="top" id="share">
+        <img src="./images/5.gif" id="end-solar" alt="">
+        <a href="job/index.html" id="enter"><img src="./images/enter.png" alt=""></a>
+        <img src="./images/banner.png" alt="" id="banner">
     </div>
     <script src="tour.js"></script>
     <script src="js/zepto.min.js"></script>
@@ -234,29 +250,29 @@
         player.play();
         bgMusic.pause();
         guide.pause();
-        if(scene >= 5) {
-          bgMusic.setAttribute('src','video/end_music.mp3');
-          bgMusic.play();
+        if (scene >= 5) {
+            bgMusic.setAttribute('src', 'video/end_music.mp3');
+            bgMusic.play();
         }
         var timer = setInterval(function() {
             if (player.ended) {
-              clearInterval(timer);
-              sceneSwitch();
+                clearInterval(timer);
+                sceneSwitch();
 
-              if(scene < 5) {
-                guide.setAttribute('src','./video/guide'+scene+'.mp3');
-                guide.play();
-                setTimeout(function(){
-                  player.setAttribute('src','video/video'+scene+'.mp4');
-                },500);
-              }else{
-                $('#player').css({
-                    'opacity': '0',
-                    'z-index': '-1'
-                });
-                $('.end').css('visibility', 'visible');
-              }
-              bgMusic.play();
+                if (scene < 5) {
+                    guide.setAttribute('src', './video/guide' + scene + '.mp3');
+                    guide.play();
+                    setTimeout(function() {
+                        player.setAttribute('src', 'video/video' + scene + '.mp4');
+                    }, 500);
+                } else {
+                    $('#player').css({
+                        'opacity': '0',
+                        'z-index': '-1'
+                    });
+                    $('.end').css('visibility', 'visible');
+                }
+                bgMusic.play();
             }
         }, 10);
     }
@@ -273,7 +289,8 @@
                     "./images/yinyin.png",
                     "./images/banner.png",
                     "./images/enter.png",
-                    "./images/rep.png",
+                    "./images/back.png",
+                    "./images/share.png",
                     "./images/5.gif",
                     "./panos/vr.tiles/preview.jpg",
                     "./panos/vr.tiles/vr/pano_b.jpg",
@@ -281,7 +298,7 @@
                     "./panos/vr.tiles/vr/pano_f.jpg",
                     "./panos/vr.tiles/vr/pano_l.jpg",
                     "./panos/vr.tiles/vr/pano_r.jpg",
-                    "./panos/vr.tiles/vr/pano_u.jpg",
+                    "./panos/vr.tiles/vr/pano_u.jpg"
                 ],
                 callback: function() {
                     console.log("done");
@@ -289,13 +306,13 @@
             },
             audio: {
                 source: [
-                   "./video/bg_music.mp3",
-                   "./video/end_music.mp3",
-                   "./video/guide0.mp3",
-                   "./video/guide1.mp3",
-                   "./video/guide2.mp3",
-                   "./video/guide3.mp3",
-                   "./video/guide4.mp3",
+                    "./video/bg_music.mp3",
+                    "./video/end_music.mp3",
+                    "./video/guide0.mp3",
+                    "./video/guide1.mp3",
+                    "./video/guide2.mp3",
+                    "./video/guide3.mp3",
+                    "./video/guide4.mp3",
 
                 ],
                 callback: function() {
@@ -304,11 +321,11 @@
             },
             video: {
                 source: [
-                   "./video/video0.mp4",
-                   "./video/video1.mp4",
-                   "./video/video2.mp4",
-                   "./video/video3.mp4",
-                   "./video/video4.mp4",
+                    "./video/video0.mp4",
+                    "./video/video1.mp4",
+                    "./video/video2.mp4",
+                    "./video/video3.mp4",
+                    "./video/video4.mp4",
 
                 ],
                 callback: function() {
@@ -332,9 +349,9 @@
                             'z-index': -1
                         });
                         bgMusic.play();
-                        setTimeout(function(){
-                          guide.play();
-                        },1000);
+                        setTimeout(function() {
+                            guide.play();
+                        }, 1000);
                     }, 1000);
                 }
             }
@@ -344,16 +361,16 @@
             console.log("已完成所有加载项");
         }
     });
-    $('#review').click(function(){
-       player.setAttribute('src','video/video0.mp4');
-       guide.setAttribute('src','./video/guide0.mp3');
-       setTimeout(function(){
-        guide.play();
-      },1000);
-       
-       $('.end').css('visibility','hidden');
-       bgMusic.setAttribute('src','video/bg_music.mp3');
-       bgMusic.play();
+    $('#review').click(function() {
+        player.setAttribute('src', 'video/video0.mp4');
+        guide.setAttribute('src', './video/guide0.mp3');
+        setTimeout(function() {
+            guide.play();
+        }, 1000);
+
+        $('.end').css('visibility', 'hidden');
+        bgMusic.setAttribute('src', 'video/bg_music.mp3');
+        bgMusic.play();
     })
     </script>
 </body>
