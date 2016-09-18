@@ -131,6 +131,13 @@ var position = {
         "require-text": "任职要求：",
         "position-duty": "1.跟踪广告业务数据，协助BD完成广告的上线以及日后的每天维护<br/>2.懂得挖掘每个广告主的潜在价值以及协助BD完成KPI以及业务增长<br/>3.数据分析，及时跟进业务进度和业务结果反馈",
         "position-require": "1.17届应届毕业生，本科以上学历<br />2.英语六级以上，良好的读写能力<br />3.具有良好的沟通, 协作能力和丰富的团队工作经验<br />4.逻辑思维清晰, 做事认真, 细致, 能承受较大的工作压力"
+    },
+    19: {
+        name: "海外拓展",
+        "duty-text": "Responsibilities：",
+        "require-text": "Minimum qualifications：",
+        "position-duty": "1.Pitching the mobile affiliate business across Europe/US/SEA, creating brand awareness and long-term contracts with agencies, advertisers and brands.<br/>2.Developing New Business - prospecting, and building revenues from new clients.<br/>3.Consultative approach to understand marketing and performance needs of a variety of clients.<br />4.Seeking new opportunities through your own network.<br />5. Networking at industry events.<br />6.Covering the commercial negotiation of long term contracts.",
+        "position-require": "1.Communication skills in English, CET-6 at least.<br />2.High achiever, target oriented and with the capacity to operate successfully within a fast paced, and rapidly changing environment."
     }
 };
 $(function () {
