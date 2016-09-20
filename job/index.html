@@ -279,6 +279,12 @@
         </h4>
             <br>
             <br>
+           <div style="position: relative">
+               <video id='myvideo' loop controls>
+                   <source src='material/赤子城-牛逼disco.mp4'>
+               </video>
+               <div id='btn'></div>
+           </div>
             <div style="text-align: center" id="ApusStoryPhoto">
                 <img src="img/life01.jpg" alt="">
                 <img src="img/life02.jpg" alt="">
@@ -291,6 +297,7 @@
                 <img src="img/life09.jpg" alt="">
                 <img src="img/life10.jpg" alt="">
             </div>
+
         </div>
     </div>
     <div class="mail-to-layer">
@@ -321,6 +328,24 @@
     <script>
         $(window)[0].onload=function(){
             $("body,html").animate({scrollTop:parseInt($(window).height()-46)+"px"},0)
+        }
+        var btn=document.getElementById('btn');
+        btn.onclick=function()
+        {
+            if(myvideo.paused)
+            {
+                myvideo.play();
+                btn.style.display='none';
+            }
+        }
+        var myvideo=document.getElementById('myvideo');
+        myvideo.onclick=function()
+        {
+            if(myvideo.play)
+            {
+                myvideo.pause();
+                btn.style.display='block';
+            }
         }
     </script>
     <script type="text/javascript" src="js/campus_24f4cac.js"></script>
