@@ -155,11 +155,11 @@
 		<hotspot name="spot3" style="hotspot_ani_Ahead" ath="-100.770" atv="30.906" onclick="js(videoPlay(3));hide3" />
 		<hotspot name="spot4" style="hotspot_ani_Ahead" ath="-135.428" atv="38.025" onclick="js(videoPlay(4));hide4" />
 		<hotspot name="spot5" style="hotspot_ani_Ahead" ath="-246.023" atv="40.872" onclick="js(videoPlay(5));hide5" />
-		 <hotspot name="tip1" url="images/sisi.png"  ath="70.023" atv="-2.328" distorted="true" width="260" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="false" onclick="js(videoPlay(1));hide1"/>
-         <hotspot name="tip2" url="images/wudi.png"  ath="-1.023" atv="5.328" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="false" onclick="js(videoPlay(2));hide2"/>
-         <hotspot name="tip3" url="images/haohao.png"  ath="-92.023" atv="13.528" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="false" onclick="js(videoPlay(3));hide3"/>
-         <hotspot name="tip4" url="images/yinyin.png"  ath="-160.023" atv="20.328" distorted="true" width="260" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="false" onclick="js(videoPlay(4));hide4"/>
-         <hotspot name="tip5" url="images/chahen.png"  ath="-215.023" atv="22.328" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="false" onclick="js(videoPlay(5));hide5"/>
+		 <hotspot name="tip1" url="images/sisi.png"  ath="70.023" atv="-2.328" distorted="true" width="260" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="true" onclick="js(videoPlay(1));hide1"/>
+         <hotspot name="tip2" url="images/wudi.png"  ath="-1.023" atv="5.328" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="true" onclick="js(videoPlay(2));hide2"/>
+         <hotspot name="tip3" url="images/haohao.png"  ath="-92.023" atv="13.528" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="true" onclick="js(videoPlay(3));hide3"/>
+         <hotspot name="tip4" url="images/yinyin.png"  ath="-160.023" atv="20.328" distorted="true" width="260" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="true" onclick="js(videoPlay(4));hide4"/>
+         <hotspot name="tip5" url="images/chahen.png"  ath="-215.023" atv="22.328" distorted="true" width="240" height=" 100" scale="1" depth="800" polyline="false" scaleflying="true" tx="0" ty="0" tz="0" zoom="true" enabled="true" onclick="js(videoPlay(5));hide5"/>
 
 	</scene>
 
